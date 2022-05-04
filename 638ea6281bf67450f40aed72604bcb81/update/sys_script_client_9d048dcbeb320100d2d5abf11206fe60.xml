@@ -1,0 +1,76 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update sys_domain="global" table="sys_script_client">
+    <sys_script_client action="INSERT_OR_UPDATE">
+        <active>true</active>
+        <applies_extended>false</applies_extended>
+        <condition/>
+        <description/>
+        <field>caller_id</field>
+        <global>true</global>
+        <isolate_script>false</isolate_script>
+        <messages/>
+        <name>Highlight VIP Caller (Smartphone)</name>
+        <order/>
+        <script><![CDATA[function onChange(control, oldValue, newValue, isLoading) {
+	// if the caller_id field is not present, then we can't add an icon anywhere
+	if (!g_form.hasField('caller_id'))
+		return;
+		
+	if (!newValue)
+		return;
+	
+	g_form.getReference('caller_id', function(ref) {
+		g_form.removeDecoration('caller_id', 'icon-star', 'VIP');
+		
+		if (ref.getValue('vip') == 'true')
+			g_form.addDecoration('caller_id', 'icon-star', 'VIP');			
+	});
+}]]></script>
+        <sys_class_name>sys_script_client</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2013-07-30 14:16:15</sys_created_on>
+        <sys_domain>global</sys_domain>
+        <sys_domain_path>/</sys_domain_path>
+        <sys_id>9d048dcbeb320100d2d5abf11206fe60</sys_id>
+        <sys_mod_count>12</sys_mod_count>
+        <sys_name>Highlight VIP Caller (Smartphone)</sys_name>
+        <sys_overrides display_value="">global</sys_overrides>
+        <sys_package display_value="Mobile UI" source="com.glide.ui.m">1d1018761b032010f40aed72604bcb62</sys_package>
+        <sys_policy/>
+        <sys_scope display_value="test_1">638ea6281bf67450f40aed72604bcb81</sys_scope>
+        <sys_update_name>sys_script_client_9d048dcbeb320100d2d5abf11206fe60</sys_update_name>
+        <sys_updated_by>robert.chiu@snc</sys_updated_by>
+        <sys_updated_on>2021-09-21 18:25:09</sys_updated_on>
+        <table>incident</table>
+        <type>onChange</type>
+        <ui_type>1</ui_type>
+        <view/>
+    </sys_script_client>
+    <sys_claim action="INSERT_OR_UPDATE">
+        <claim_owner_scope display_value="test_1">638ea6281bf67450f40aed72604bcb81</claim_owner_scope>
+        <claim_timestamp>17c099ac1780000001</claim_timestamp>
+        <metadata_update_name>sys_script_client_9d048dcbeb320100d2d5abf11206fe60</metadata_update_name>
+        <previous_claim_app_version>1.0.0</previous_claim_app_version>
+        <previous_claim_name>test_1</previous_claim_name>
+        <previous_claim_scope>638ea6281bf67450f40aed72604bcb81</previous_claim_scope>
+        <sys_created_by>robert.chiu@snc</sys_created_by>
+        <sys_created_on>2021-09-21 18:25:09</sys_created_on>
+        <sys_id>f9ceaa281bf67450f40aed72604bcb4d</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>robert.chiu@snc</sys_updated_by>
+        <sys_updated_on>2021-09-21 18:25:09</sys_updated_on>
+    </sys_claim>
+    <sys_claim action="INSERT_OR_UPDATE">
+        <claim_owner_scope display_value="test_1">638ea6281bf67450f40aed72604bcb81</claim_owner_scope>
+        <claim_timestamp>17c099ac1770000001</claim_timestamp>
+        <metadata_update_name>sys_script_client_9d048dcbeb320100d2d5abf11206fe60</metadata_update_name>
+        <previous_claim_app_version/>
+        <previous_claim_name>com.glide.ui.m</previous_claim_name>
+        <previous_claim_scope>com.glide.ui.m</previous_claim_scope>
+        <sys_created_by>robert.chiu@snc</sys_created_by>
+        <sys_created_on>2021-09-21 18:25:09</sys_created_on>
+        <sys_id>bdceaa281bf67450f40aed72604bcb4d</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>robert.chiu@snc</sys_updated_by>
+        <sys_updated_on>2021-09-21 18:25:09</sys_updated_on>
+    </sys_claim>
+</record_update>

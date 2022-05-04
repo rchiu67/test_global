@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update table="sys_ui_policy_action">
+    <sys_ui_policy_action action="INSERT_OR_UPDATE">
+        <cleared>false</cleared>
+        <disabled>true</disabled>
+        <field>work_notes</field>
+        <mandatory>ignore</mandatory>
+        <sys_class_name>sys_ui_policy_action</sys_class_name>
+        <sys_created_by>glide.maint</sys_created_by>
+        <sys_created_on>2009-03-04 04:18:18</sys_created_on>
+        <sys_id>cfb3dc2a0a0a0b3000a53db0b5bb6f99</sys_id>
+        <sys_mod_count>3</sys_mod_count>
+        <sys_name>work_notes</sys_name>
+        <sys_package display_value="Best Practice - Incident Resolution Workflow" source="com.snc.bestpractice.incident">8058107a1b072010f40aed72604bcbed</sys_package>
+        <sys_policy/>
+        <sys_scope display_value="test_1">638ea6281bf67450f40aed72604bcb81</sys_scope>
+        <sys_update_name>sys_ui_policy_action_cfb3dc2a0a0a0b3000a53db0b5bb6f99</sys_update_name>
+        <sys_updated_by>robert.chiu@snc</sys_updated_by>
+        <sys_updated_on>2021-09-21 18:25:34</sys_updated_on>
+        <table>incident</table>
+        <ui_policy display_value="Make fields read-only on close">66f94c730a0a0b0900aaaf5b88527230</ui_policy>
+        <visible>ignore</visible>
+    </sys_ui_policy_action>
+    <sys_claim action="INSERT_OR_UPDATE">
+        <claim_owner_scope display_value="test_1">638ea6281bf67450f40aed72604bcb81</claim_owner_scope>
+        <claim_timestamp>17c099b21dc0000001</claim_timestamp>
+        <metadata_update_name>sys_ui_policy_action_cfb3dc2a0a0a0b3000a53db0b5bb6f99</metadata_update_name>
+        <previous_claim_app_version>1.0.0</previous_claim_app_version>
+        <previous_claim_name>test_1</previous_claim_name>
+        <previous_claim_scope>638ea6281bf67450f40aed72604bcb81</previous_claim_scope>
+        <sys_created_by>robert.chiu@snc</sys_created_by>
+        <sys_created_on>2021-09-21 18:25:34</sys_created_on>
+        <sys_id>bfde22681bf67450f40aed72604bcb6f</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>robert.chiu@snc</sys_updated_by>
+        <sys_updated_on>2021-09-21 18:25:34</sys_updated_on>
+    </sys_claim>
+    <sys_claim action="INSERT_OR_UPDATE">
+        <claim_owner_scope display_value="test_1">638ea6281bf67450f40aed72604bcb81</claim_owner_scope>
+        <claim_timestamp>17c099b21db0000001</claim_timestamp>
+        <metadata_update_name>sys_ui_policy_action_cfb3dc2a0a0a0b3000a53db0b5bb6f99</metadata_update_name>
+        <previous_claim_app_version/>
+        <previous_claim_name>com.snc.bestpractice.incident</previous_claim_name>
+        <previous_claim_scope>com.snc.bestpractice.incident</previous_claim_scope>
+        <sys_created_by>robert.chiu@snc</sys_created_by>
+        <sys_created_on>2021-09-21 18:25:34</sys_created_on>
+        <sys_id>73de22681bf67450f40aed72604bcb70</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>robert.chiu@snc</sys_updated_by>
+        <sys_updated_on>2021-09-21 18:25:34</sys_updated_on>
+    </sys_claim>
+</record_update>

@@ -1,0 +1,92 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update sys_domain="global" table="sys_ui_action">
+    <sys_ui_action action="INSERT_OR_UPDATE">
+        <action_name>report_knowledge_gap</action_name>
+        <active>true</active>
+        <client>true</client>
+        <client_script_v2><![CDATA[function onClick(g_form) {
+		var incknowledgeUtil = new GlideAjax("IncidentUtils2");
+		incknowledgeUtil.addParam("sysparm_name", "getKnowledgeGapMapping");
+		incknowledgeUtil.addParam("sysparm_incident", g_form.getUniqueValue());
+		incknowledgeUtil.getXMLAnswer(function(query) {
+			g_aw.openRecord("kb_feedback_task", "-1", {
+				"views": "create",
+				"query": query
+			});
+		});
+}]]></client_script_v2>
+        <comments>For agent to report knowledge gap on incident in agent workspace.</comments>
+        <condition>gs.hasRole("itil", "sn_incident_write") &amp;&amp; new IncidentUtils().canCreateKnowledgeGap(current);</condition>
+        <form_action>false</form_action>
+        <form_button>false</form_button>
+        <form_button_v2>false</form_button_v2>
+        <form_context_menu>false</form_context_menu>
+        <form_link>false</form_link>
+        <form_menu_button_v2>true</form_menu_button_v2>
+        <form_style/>
+        <hint/>
+        <isolate_script>true</isolate_script>
+        <list_action>false</list_action>
+        <list_banner_button>false</list_banner_button>
+        <list_button>false</list_button>
+        <list_choice>false</list_choice>
+        <list_context_menu>false</list_context_menu>
+        <list_link>false</list_link>
+        <list_save_with_form_button>false</list_save_with_form_button>
+        <list_style/>
+        <messages/>
+        <name>Report Knowledge Gap</name>
+        <onclick/>
+        <order>151</order>
+        <script/>
+        <show_insert>false</show_insert>
+        <show_multiple_update>false</show_multiple_update>
+        <show_query>false</show_query>
+        <show_update>true</show_update>
+        <sys_class_name>sys_ui_action</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2019-07-09 10:14:02</sys_created_on>
+        <sys_domain>global</sys_domain>
+        <sys_domain_path/>
+        <sys_id>586f83550fa23300f9b1cb6afa767ef6</sys_id>
+        <sys_mod_count>68</sys_mod_count>
+        <sys_name>Report Knowledge Gap</sys_name>
+        <sys_overrides/>
+        <sys_package display_value="Incident" source="com.snc.incident">6b65d0fa1bc32010f40aed72604bcbc0</sys_package>
+        <sys_policy/>
+        <sys_scope display_value="test_1">638ea6281bf67450f40aed72604bcb81</sys_scope>
+        <sys_update_name>sys_ui_action_586f83550fa23300f9b1cb6afa767ef6</sys_update_name>
+        <sys_updated_by>robert.chiu@snc</sys_updated_by>
+        <sys_updated_on>2021-09-21 18:25:22</sys_updated_on>
+        <table>incident</table>
+        <ui11_compatible>true</ui11_compatible>
+        <ui16_compatible>true</ui16_compatible>
+    </sys_ui_action>
+    <sys_claim action="INSERT_OR_UPDATE">
+        <claim_owner_scope display_value="test_1">638ea6281bf67450f40aed72604bcb81</claim_owner_scope>
+        <claim_timestamp>17c099af5d00000001</claim_timestamp>
+        <metadata_update_name>sys_ui_action_586f83550fa23300f9b1cb6afa767ef6</metadata_update_name>
+        <previous_claim_app_version>1.0.0</previous_claim_app_version>
+        <previous_claim_name>test_1</previous_claim_name>
+        <previous_claim_scope>638ea6281bf67450f40aed72604bcb81</previous_claim_scope>
+        <sys_created_by>robert.chiu@snc</sys_created_by>
+        <sys_created_on>2021-09-21 18:25:22</sys_created_on>
+        <sys_id>8dde6e281bf67450f40aed72604bcb50</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>robert.chiu@snc</sys_updated_by>
+        <sys_updated_on>2021-09-21 18:25:22</sys_updated_on>
+    </sys_claim>
+    <sys_claim action="INSERT_OR_UPDATE">
+        <claim_owner_scope display_value="test_1">638ea6281bf67450f40aed72604bcb81</claim_owner_scope>
+        <claim_timestamp>17c099af5cf0000001</claim_timestamp>
+        <metadata_update_name>sys_ui_action_586f83550fa23300f9b1cb6afa767ef6</metadata_update_name>
+        <previous_claim_app_version/>
+        <previous_claim_name>com.snc.incident</previous_claim_name>
+        <previous_claim_scope>com.snc.incident</previous_claim_scope>
+        <sys_created_by>robert.chiu@snc</sys_created_by>
+        <sys_created_on>2021-09-21 18:25:22</sys_created_on>
+        <sys_id>45de6e281bf67450f40aed72604bcb51</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>robert.chiu@snc</sys_updated_by>
+        <sys_updated_on>2021-09-21 18:25:22</sys_updated_on>
+    </sys_claim>
+</record_update>

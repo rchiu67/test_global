@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update>
+    <sys_documentation element="caused_by" label="Caused by Change" language="en" table="incident">
+        <sys_documentation action="INSERT_OR_UPDATE">
+            <element>caused_by</element>
+            <help/>
+            <hint>Change request that caused the incident</hint>
+            <label>Caused by Change</label>
+            <language>en</language>
+            <name>incident</name>
+            <plural>Caused by Changes</plural>
+            <sys_class_name>sys_documentation</sys_class_name>
+            <sys_created_by>system</sys_created_by>
+            <sys_created_on>2021-03-25 21:06:05</sys_created_on>
+            <sys_id>c87514fa1bc32010f40aed72604bcb1b</sys_id>
+            <sys_mod_count>1</sys_mod_count>
+            <sys_name>Caused by Change</sys_name>
+            <sys_package display_value="Incident" source="com.snc.incident">6b65d0fa1bc32010f40aed72604bcbc0</sys_package>
+            <sys_policy/>
+            <sys_scope display_value="test_1">638ea6281bf67450f40aed72604bcb81</sys_scope>
+            <sys_update_name>sys_documentation_incident_caused_by_en</sys_update_name>
+            <sys_updated_by>robert.chiu@snc</sys_updated_by>
+            <sys_updated_on>2021-09-21 18:25:43</sys_updated_on>
+            <url/>
+            <url_target/>
+        </sys_documentation>
+    </sys_documentation>
+    <sys_claim action="INSERT_OR_UPDATE">
+        <claim_owner_scope display_value="test_1">638ea6281bf67450f40aed72604bcb81</claim_owner_scope>
+        <claim_timestamp>17c099b46300000001</claim_timestamp>
+        <metadata_update_name>sys_documentation_incident_caused_by_en</metadata_update_name>
+        <previous_claim_app_version>1.0.0</previous_claim_app_version>
+        <previous_claim_name>test_1</previous_claim_name>
+        <previous_claim_scope>638ea6281bf67450f40aed72604bcb81</previous_claim_scope>
+        <sys_created_by>robert.chiu@snc</sys_created_by>
+        <sys_created_on>2021-09-21 18:25:43</sys_created_on>
+        <sys_id>4aeea2681bf67450f40aed72604bcb6c</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>robert.chiu@snc</sys_updated_by>
+        <sys_updated_on>2021-09-21 18:25:43</sys_updated_on>
+    </sys_claim>
+    <sys_claim action="INSERT_OR_UPDATE">
+        <claim_owner_scope display_value="test_1">638ea6281bf67450f40aed72604bcb81</claim_owner_scope>
+        <claim_timestamp>17c099b462f0000001</claim_timestamp>
+        <metadata_update_name>sys_documentation_incident_caused_by_en</metadata_update_name>
+        <previous_claim_app_version/>
+        <previous_claim_name>com.snc.incident</previous_claim_name>
+        <previous_claim_scope>com.snc.incident</previous_claim_scope>
+        <sys_created_by>robert.chiu@snc</sys_created_by>
+        <sys_created_on>2021-09-21 18:25:43</sys_created_on>
+        <sys_id>0eeea2681bf67450f40aed72604bcb6c</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>robert.chiu@snc</sys_updated_by>
+        <sys_updated_on>2021-09-21 18:25:43</sys_updated_on>
+    </sys_claim>
+</record_update>

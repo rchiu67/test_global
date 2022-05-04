@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update table="sys_security_acl_role">
+    <sys_security_acl_role action="INSERT_OR_UPDATE">
+        <sys_class_name>sys_security_acl_role</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2017-01-11 14:56:45</sys_created_on>
+        <sys_id>11990f3cd7103200f2d224837e610371</sys_id>
+        <sys_mod_count>1</sys_mod_count>
+        <sys_name>incident.hold_reason.itil</sys_name>
+        <sys_package display_value="Incident Management - Core" source="com.snc.incident_management">34f95c721b472010f40aed72604bcb0f</sys_package>
+        <sys_policy/>
+        <sys_scope display_value="test_1">638ea6281bf67450f40aed72604bcb81</sys_scope>
+        <sys_security_acl display_value="incident.hold_reason">64990f3cd7103200f2d224837e61031b</sys_security_acl>
+        <sys_update_name>sys_security_acl_role_11990f3cd7103200f2d224837e610371</sys_update_name>
+        <sys_updated_by>robert.chiu@snc</sys_updated_by>
+        <sys_updated_on>2021-09-21 18:25:17</sys_updated_on>
+        <sys_user_role display_value="itil" name="itil">282bf1fac6112285017366cb5f867469</sys_user_role>
+        <transaction_id/>
+    </sys_security_acl_role>
+    <sys_claim action="INSERT_OR_UPDATE">
+        <claim_owner_scope display_value="test_1">638ea6281bf67450f40aed72604bcb81</claim_owner_scope>
+        <claim_timestamp>17c099ae2020000001</claim_timestamp>
+        <metadata_update_name>sys_security_acl_role_11990f3cd7103200f2d224837e610371</metadata_update_name>
+        <previous_claim_app_version>1.0.0</previous_claim_app_version>
+        <previous_claim_name>test_1</previous_claim_name>
+        <previous_claim_scope>638ea6281bf67450f40aed72604bcb81</previous_claim_scope>
+        <sys_created_by>robert.chiu@snc</sys_created_by>
+        <sys_created_on>2021-09-21 18:25:17</sys_created_on>
+        <sys_id>b7ce2e281bf67450f40aed72604bcb2d</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>robert.chiu@snc</sys_updated_by>
+        <sys_updated_on>2021-09-21 18:25:17</sys_updated_on>
+    </sys_claim>
+    <sys_claim action="INSERT_OR_UPDATE">
+        <claim_owner_scope display_value="test_1">638ea6281bf67450f40aed72604bcb81</claim_owner_scope>
+        <claim_timestamp>17c099ae2010000001</claim_timestamp>
+        <metadata_update_name>sys_security_acl_role_11990f3cd7103200f2d224837e610371</metadata_update_name>
+        <previous_claim_app_version/>
+        <previous_claim_name>com.snc.incident_management</previous_claim_name>
+        <previous_claim_scope>com.snc.incident_management</previous_claim_scope>
+        <sys_created_by>robert.chiu@snc</sys_created_by>
+        <sys_created_on>2021-09-21 18:25:17</sys_created_on>
+        <sys_id>7bce2e281bf67450f40aed72604bcb2d</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>robert.chiu@snc</sys_updated_by>
+        <sys_updated_on>2021-09-21 18:25:17</sys_updated_on>
+    </sys_claim>
+</record_update>
